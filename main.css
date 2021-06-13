@@ -1,0 +1,274 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.9rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color:hsl(321, 100%, 78%)
+}
+a:visited {
+  color:hsl(322, 100%, 66%)
+}
+
+header {
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 165px;
+}
+.header-button {
+  color: hsl(322, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
+  border-radius: 20px;
+  background-color: white;
+  padding: 0px 30px 0px 30px;
+  font-size: 14px;
+  box-shadow: 0px 0px 5px 5px hsla(321, 100%, 78%, 0.2);
+}
+
+.get-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-started-button {
+  font-size: 18px;
+  height: 80px;
+  padding: 0px 100px 0px 100px;
+  border-radius: 70px;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  border: none;
+}
+
+.customer-count {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 130px;
+}
+
+.count > p {
+  margin: 0;
+}
+
+.count-small-p {
+  font-size: 24px;
+  font-family: "Open sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: hsl(191, 10%, 56%);
+}
+
+.big-number {
+  font-size: 90px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.large-paragraph {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  width: 590px;
+  color: hsl(192, 100%, 9%);
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.screen-mockups {
+  width: 1015px;
+  margin-top: 175px;
+}
+
+.sub-section {
+  display: grid;
+  justify-content: center;
+}
+
+.sub-section-one,
+.sub-section-three {
+  background-color: #f6fbff;
+  padding: 70px;
+}
+
+.bg-top {
+  margin-bottom: -4px;
+  margin-top: 145px;
+}
+.bg-bottom {
+  margin-bottom: 145px;
+}
+
+.sub-section > img {
+  height: 420px;
+}
+.sub-section > p {
+  font-family: "Open sans", sans-serif;
+  width: 500px;
+}
+
+.sub-section-one {
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+    "title img"
+    "text img";
+}
+.sub-section-one > h2,
+.sub-section-three > h2 {
+  grid-area: title;
+  align-self: end;
+  margin-bottom: 5px;
+}
+.sub-section-one > p,
+.sub-section-three > p {
+  grid-area: text;
+  align-self: start;
+}
+.sub-section-one > img,
+.sub-section-three > img {
+  grid-area: img;
+  margin-left: 120px;
+}
+
+.sub-section-two {
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+    "img title"
+    "img text";
+}
+.sub-section-two > h2 {
+  grid-area: title;
+  align-self: end;
+  margin-bottom: 5px;
+}
+.sub-section-two > p {
+  grid-area: text;
+  align-self: start;
+}
+.sub-section-two > img {
+  grid-area: img;
+  margin-right: 120px;
+}
+
+.sub-section-three {
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+    "title img"
+    "text img";
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  padding: 120px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'Open Sans', sans-serif;
+}
+.footer-top {
+  margin-bottom: -4px;
+  margin-top: 145px;
+}
+.footer-section > h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.footer-section > p {
+  font-size: 16px;
+  max-width: 350px;
+  font-weight: 400;
+}
+
+.footer-section-one {
+  padding-bottom: 5px;
+}
+
+.icon {
+  padding-right: 10px;
+}
+
+.footer-section-two {
+  justify-self: end;
+}
+
+.footer-section-two > h3 {
+  margin-top: 0px;
+}
+
+.footer-section-two > p {
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.newsletter-input {
+  height: 46px;
+  width: 320px;
+  border-radius: 5px;
+  border: none;
+}
+
+.subscribe-btn {
+  height: 50px;
+  width: 160px;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  font-family: 'Open sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  margin-left: 30px;
+}
+
+.social-media {
+  display: flex;
+}
+.social-icon {
+  height: 35px;
+  width: 35px;
+  color: white;
+  padding-right: 20px;
+  padding-top: 80px;
+}
+
