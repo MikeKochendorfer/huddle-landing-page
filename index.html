@@ -109,6 +109,7 @@
       <form>
         <label for="email">
           <input class="newsletter-input" type="email" name="email">
+          <span class="invalid-input">Check your email please</span>
         </label>
         <button class="subscribe-btn">Subscribe</button>
       </form>
@@ -118,5 +119,27 @@
       Coded by <a href="https://github.com/mikekochendorfer">Michael Kochendorfer</a>.
     </p>
   </footer>
+
+  <script>
+    const newsletterInput = document.querySelector('.newsletter-input');
+    const invalidEmailMessage = document.querySelector('.invalid-input');
+    const subscribeButton = document.querySelector('.subscribe-btn');
+
+    invalidEmailMessage.hidden = true;
+
+    newsletterInput.addEventListener("input", () => {
+      if(newsletterInput.validity.typeMismatch) {
+        invalidEmailMessage.hidden = false;
+        subscribeButton.disabled = true;
+      } else {
+        invalidEmailMessage.hidden = true;
+        subscribeButton.disabled = false;
+      } 
+    })
+    subscribeButton.addEventListener('click', (e) => {
+      e.preventDefault()
+      alert('This button does not actually submit your data anywhere. Thanks for checking out my work!')
+    })
+  </script>
 </body>
 </html>
