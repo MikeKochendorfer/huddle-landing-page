@@ -125,11 +125,13 @@ header {
 }
 
 .bg-top {
-  margin-bottom: -4px;
   margin-top: 145px;
+  margin-bottom: -5px;
+  width: 100%;
 }
 .bg-bottom {
   margin-bottom: 145px;
+  width: 100%;
 }
 
 .sub-section > img {
@@ -202,8 +204,9 @@ footer {
   font-family: 'Open Sans', sans-serif;
 }
 .footer-top {
-  margin-bottom: -4px;
   margin-top: 145px;
+  margin-bottom: -6px;
+  width: 100%;
 }
 .footer-section > h3 {
   font-size: 25px;
