@@ -106,7 +106,6 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 165px;
-  align-items: center;
 }
 
 /** Call to Action Styles **/
@@ -378,6 +377,7 @@ footer {
   header {
     padding: 25px 25px 40px 25px;
     margin-bottom: 75px;
+    align-items: center;
   }
 
   .logo {
