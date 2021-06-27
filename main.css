@@ -347,10 +347,10 @@ footer {
 
 /***************
   Mobile Styles
-  Width: 375px
+  Designed for width: 375px
 ****************/
 
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   /** Mobile Global styles **/
   h1, .get-started h2 {
     font-size: 23px;
