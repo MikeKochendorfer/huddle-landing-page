@@ -106,6 +106,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 165px;
+  align-items: center;
 }
 
 /** Call to Action Styles **/
