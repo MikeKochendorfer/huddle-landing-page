@@ -1,3 +1,7 @@
+/***************
+  Global Styles
+****************/
+
 html {
   padding: 0;
   margin: 0;
@@ -49,12 +53,16 @@ button:active, button:hover {
   cursor: pointer;
 }
 
-header {
-  padding: 80px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 165px;
+.mobile-bg-top, .mobile-bg-bottom, .mobile-footer-top {
+  display: none;
 }
+
+/***************
+  Component Styles
+****************/
+
+
+/** button styles **/
 .header-button {
   color: hsl(322, 100%, 66%);
   border: 1px solid hsl(322, 100%, 66%);
@@ -69,13 +77,6 @@ header {
 .header-button:focus {
   color: hsl(321, 100%, 78%);
   border-color:hsl(321, 100%, 78%);
-}
-
-.get-started {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .get-started-button {
@@ -95,6 +96,43 @@ header {
   background-color: hsl(321, 100%, 78%);
 }
 
+/***************
+  Layout Styles
+****************/
+
+/** Header Styles**/
+header {
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 165px;
+}
+
+/** Call to Action Styles **/
+.get-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.large-paragraph {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  width: 590px;
+  color: hsl(192, 100%, 9%);
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.screen-mockups {
+  width: 1015px;
+  margin-top: 175px;
+}
+
+/** Customer Count Section **/
 .customer-count {
   width: 100%;
   display: flex;
@@ -120,21 +158,7 @@ header {
   font-weight: 700;
 }
 
-.large-paragraph {
-  font-size: 20px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  width: 590px;
-  color: hsl(192, 100%, 9%);
-  margin-top: 30px;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.screen-mockups {
-  width: 1015px;
-  margin-top: 175px;
-}
+/** Middle Section**/
 
 .sub-section {
   display: grid;
@@ -149,7 +173,7 @@ header {
 
 .bg-top {
   margin-top: 145px;
-  margin-bottom: -5px;
+  margin-bottom: -6px;
   width: 100%;
 }
 .bg-bottom {
@@ -218,6 +242,7 @@ header {
     "text img";
 }
 
+/** Footer Section **/
 footer {
   background-color: hsl(192, 100%, 9%);
   padding: 120px;
@@ -246,7 +271,7 @@ footer {
   padding-bottom: 5px;
 }
 
-.icon {
+.footer-icon {
   padding-right: 10px;
 }
 
@@ -276,7 +301,7 @@ footer {
   font-size: 14px;
 }
 
-.invalid-input {
+.invalid-email {
   position: absolute;
   margin-left: -330px;
   margin-top: 55px;
@@ -318,4 +343,236 @@ footer {
 .social-icon:focus {
   background-color: hsl(191, 100%, 46%);
   cursor: pointer;
+}
+
+/***************
+  Mobile Styles
+  Width: 375px
+****************/
+
+@media (max-width: 400px) {
+  /** Mobile Global styles **/
+  h1, .get-started h2 {
+    font-size: 23px;
+  }
+
+  h2 {
+    font-size: 18px
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .bg-top, .bg-bottom {
+    display: none;
+  }
+
+  .mobile-bg-top, .mobile-bg-bottom, .mobile-footer-top {
+    display: unset;
+  }
+
+  /** Header Section **/
+
+  header {
+    padding: 25px 25px 40px 25px;
+    margin-bottom: 75px;
+  }
+
+  .logo {
+    height: 16px;
+  }
+
+  .header-button {
+    padding: 5px 15px 5px 15px;
+    font-size: 11px
+  }
+
+  /** Call to Action Section **/
+
+  .get-started-button {
+    font-size: 12px;
+    height: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .get-started {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .large-paragraph {
+    font-size: 14px;
+    max-width: 300px
+  }
+
+  .get-started h1, .get-started h2 {
+    max-width: 300px;
+  }
+
+  .screen-mockups {
+    max-width: 300px;
+    margin-top: 90px
+  }
+
+  /** Customer Count Section **/
+  .customer-count {
+    flex-direction: column;
+    margin-top: 120px;
+  }
+
+  .count {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 70px
+  }
+
+  .count-icon {
+    width: 30px;
+  }
+
+  .big-number {
+    font-size: 60px;
+    
+  }
+
+  .count-small-p {
+    font-size: 15px;
+  }
+
+  /** Middle Section **/
+
+  .mobile-bg-top {
+    margin-bottom: -6px;
+    width: 100%;
+  }
+
+  .mobile-bg-bottom {
+    width: 100%;
+  }
+
+  .sub-section {
+    justify-items: center;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .sub-section-one, .sub-section-three {
+    grid-template-areas: 
+      'img'
+      'title'
+      'text';
+  } 
+
+  .sub-section-two {
+    padding: 145px 0px;
+  }
+
+  .sub-section img {
+    height: 200px;
+    padding-bottom: 80px;
+  }
+
+  .sub-section p {
+    max-width: 320px;
+  }
+
+  .sub-section-one > img, .sub-section-three > img {
+    margin-left: 0
+  }
+
+  .sub-section-two {
+    grid-template-areas: 
+      'img'
+      'title'
+      'text'
+    ;
+  }
+
+  .sub-section-two img {
+    margin-right: 0;
+  }
+
+  /* Call to action */
+  .get-started:nth-of-type(even) {
+    padding: 65px 0px;
+  } /* the second .get-started section just above the footer */
+
+  /* Footer section */
+
+  .footer-top {
+    visibility: hidden;
+  } /* hide desktop footer top image*/
+
+  .mobile-footer-top {
+    margin-bottom: -6px;
+    width: 100%;
+  }
+
+  footer {
+   grid-template-columns: 1fr;
+   padding: 30px;
+   padding-top: 60px;
+   grid-gap: 100px;
+  }
+
+  .footer-section p {
+    font-size: 14px;
+    max-width: 300px;
+    line-height: 1.75;
+    margin-bottom: 30px
+  }
+
+  .footer-section-two h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .footer-section-one {
+    order: 2;
+  }
+
+  .footer-section-two {
+    justify-self: start;
+  }
+
+  .newsletter-input {
+    width: 300px;
+  }
+
+  form {
+    display: grid;
+  }
+
+  .invalid-email {
+    margin-left: -310px;
+  }
+
+  .subscribe-btn {
+    margin: 0;
+    margin-top: 15px;
+    justify-self: end;
+  }
+
+  .footer-logo {
+    width: 200px;
+  }
+
+  .contact-info {
+    margin-bottom: 0px !important;
+    
+  }
+  .contact-info {
+    font-size: 14px !important;
+  }
+
+  .social-icon {
+    margin-top: 40px;
+    height: 28px;
+    width: 28px;
+  }
+
+  .attribution {
+    order: 3
+  }
 }

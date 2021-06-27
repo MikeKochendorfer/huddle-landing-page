@@ -32,12 +32,12 @@
 
     <div class="customer-count">
       <div class="count">
-        <img src="images/icon-communities.svg">
+        <img class="count-icon" src="images/icon-communities.svg">
         <p class="big-number">1.4k+</p>
         <p class="count-small-p">Communities Formed</p>
       </div>
       <div class="count">
-        <img src="images/icon-messages.svg">
+        <img class="count-icon" src="images/icon-messages.svg">
         <p class="big-number">2.7m+</p>
         <p class="count-small-p">Messages Sent</p>
       </div>
@@ -45,12 +45,14 @@
   </section>
 
   <img class="bg-top" src="images/bg-section-top-desktop-1.svg">
+  <img class="mobile-bg-top" src="images/bg-section-top-mobile-1.svg">
   <div class="sub-section sub-section-one">
     <img src="images/illustration-grow-together.svg">
     <h2>Grow Together</h2>
     <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
     Think of the insightful conversations you miss out on with a feedback form.</p> 
   </div>
+  <img class="mobile-bg-bottom" src="images/bg-section-bottom-mobile-1.svg">
   <img class="bg-bottom" src="images/bg-section-bottom-desktop-1.svg">
 
   <div class="sub-section sub-section-two">
@@ -61,12 +63,14 @@
   </div>
 
   <img class="bg-top" src="images/bg-section-top-desktop-2.svg">
+  <img class="mobile-bg-top" src="images/bg-section-top-mobile-2.svg">
   <div class="sub-section sub-section-three">
     <img src="images/illustration-your-users.svg">
     <h2>Your Users</h2>
     <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
     once signed in to your app, your users can start chatting immediately.</p>
   </div>
+  <img class="mobile-bg-bottom" src="images/bg-section-bottom-mobile-2.svg">
   <img class="bg-bottom" src="images/bg-section-bottom-desktop-2.svg">
 
   <div class="get-started">
@@ -75,21 +79,22 @@
   </div>
 
   <img class="footer-top" src="images/bg-footer-top-desktop.svg">
+  <img class="mobile-footer-top" src="images/bg-footer-top-mobile.svg">
   <footer>
-
+    
     <div class="footer-section-one footer-section">
-      <img src="images/logo-white.svg">
+      <img class="footer-logo" src="images/logo-white.svg">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
       vestibulum a, ultrices quis sem.</p>
   
       <p class="contact-info">
-        <span class="icon">
+        <span class="footer-icon">
           <img src="images/icon-phone.svg">
         </span>
         Phone: +1-543-123-4567
       </p>
       <p class="contact-info">
-        <span class="icon">
+        <span class="footer-icon">
           <img src="images/icon-email.svg">
         </span>
         example@huddle.com
@@ -109,7 +114,7 @@
       <form>
         <label for="email">
           <input class="newsletter-input" type="email" name="email">
-          <span class="invalid-input">Check your email please</span>
+          <span class="invalid-email">Check your email please</span>
         </label>
         <button class="subscribe-btn">Subscribe</button>
       </form>
@@ -122,7 +127,7 @@
 
   <script>
     const newsletterInput = document.querySelector('.newsletter-input');
-    const invalidEmailMessage = document.querySelector('.invalid-input');
+    const invalidEmailMessage = document.querySelector('.invalid-email');
     const subscribeButton = document.querySelector('.subscribe-btn');
 
     invalidEmailMessage.hidden = true;
